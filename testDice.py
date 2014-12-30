@@ -9,7 +9,7 @@ class TestDice(unittest.TestCase):
 		We create die with from 1 to 10 sides, and roll them each 1000 times, testing
 		each roll to ensure it is within the expected range"""
 		for sides in xrange(1,10):
-			die = dice(sides)
+			die = dice.Die(sides)
 			for x in xrange(1,1000):
 				rollvalue = die.roll()
 				self.assertTrue(rollvalue <= sides & rollvalue >= 1, 

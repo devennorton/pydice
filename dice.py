@@ -1,9 +1,9 @@
 
 
-class Dice(object):
+class Die(object):
 	"""docstring for Dice"""
 	def __init__(self, sides):
-		super(Dice, self).__init__()
+		super(Die, self).__init__()
 		self.sides = sides
 		
 	def roll(self):
