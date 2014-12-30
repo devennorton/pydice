@@ -1,4 +1,4 @@
-
+import random
 
 class Die(object):
 	"""docstring for Dice"""
@@ -7,4 +7,4 @@ class Die(object):
 		self.sides = sides
 		
 	def roll(self):
-		pass
+		return random.randint(1, self.sides)

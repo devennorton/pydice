@@ -12,7 +12,7 @@ class TestDice(unittest.TestCase):
 			die = dice.Die(sides)
 			for x in xrange(1,1000):
 				rollvalue = die.roll()
-				self.assertTrue(rollvalue <= sides & rollvalue >= 1, 
+				self.assertTrue(rollvalue <= sides and rollvalue >= 1, 
 					msg="roll of %s is outside of range 1-%s" % (rollvalue, sides))
 
 if __name__ == '__main__':
