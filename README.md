@@ -1,4 +1,4 @@
 pydice
 ======
 
-silly litte project
+silly little project
