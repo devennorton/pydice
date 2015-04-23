@@ -18,7 +18,7 @@ def handleRoll(roll):
 		(faces, modifier) = string.split(roll, '-', 1)
 		modifier = - int(modifier)
 	elif '+' in roll:
-		(faces, modifier) = string.split(roll, '-', 1)
+		(faces, modifier) = string.split(roll, '+', 1)
 		modifier = int(modifier)
 	else:
 		faces = int(roll)
